@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sudoko Project</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="div1">
+        <h1 id="firstH">Welcome To Sudoko Game:</h1>
+        <input id="userN" class="inpt" type="text" placeholder="User Name">
+        <br>
+        <br>
+        <br>
+        <input id="Pass" class="inpt" type="text" placeholder="password">
+        <button onclick="startG()" id="firstB">Enter</button>
+    </div>
+    <div id="div2">
+        <h1 class="welc">Welcome Dear <span id="user"></span></h1>
+        <h2 class="welc">Level Difficulty:</h2>
+        <div id="divF">
+            <button class="buttons"><li id="level1" onclick="diffculty('Easy')">Easy</li> </button>
+            <button class="buttons"><li id="level2" onclick="diffculty('Medium')">Medium </li></button>
+            <button class="buttons"><li id="level3" onclick="diffculty('Hard')">Hard</li></button>
+        </div>
+    </div>
+    <div id="div3">
+        <h1 id="H3">Good Luck</h1>
+        <table id="Table">
+            <tr class="rowT" id="row1">
+                <td class="td" id="k1" onclick="putNumber('k1')"></td>
+                <td class="td" id="k2" onclick="putNumber('k2')"></td>
+                <td class="td" id="k3" onclick="putNumber('k3')"></td>
+                <td class="td" id="k4" onclick="putNumber('k4')"></td>
+                <td class="td" id="k5" onclick="putNumber('k5')"></td>
+                <td class="td" id="k6" onclick="putNumber('k6')"></td>
+                <td class="td" id="k7" onclick="putNumber('k7')"></td>
+                <td class="td" id="k8" onclick="putNumber('k8')"></td>
+                <td class="td" id="k9" onclick="putNumber('k9')"></td>
+            </tr>
+            <tr class="rowT" id="row2">
+                <td class="td" id="k10" onclick="putNumber('k10')"></td>
+                <td class="td" id="k11" onclick="putNumber('k11')"></td>
+                <td class="td" id="k12" onclick="putNumber('k12')"></td>
+                <td class="td" id="k13" onclick="putNumber('k13')"></td>
+                <td class="td" id="k14" onclick="putNumber('k14')"></td>
+                <td class="td" id="k15" onclick="putNumber('k15')"></td>
+                <td class="td" id="k16" onclick="putNumber('k16')"></td>
+                <td class="td" id="k17" onclick="putNumber('k17')"></td>
+                <td class="td" id="k18" onclick="putNumber('k18')"></td>
+            </tr>
+            <tr class="rowT" id="row3">
+                <td class="td" id="k19" onclick="putNumber('k19')"></td>
+                <td class="td" id="k20" onclick="putNumber('k20')"></td>
+                <td class="td" id="k21" onclick="putNumber('k21')"></td>
+                <td class="td" id="k22" onclick="putNumber('k22')"></td>
+                <td class="td" id="k23" onclick="putNumber('k23')"></td>
+                <td class="td" id="k24" onclick="putNumber('k24')"></td>
+                <td class="td" id="k25" onclick="putNumber('k25')"></td>
+                <td class="td" id="k26" onclick="putNumber('k26')"></td>
+                <td class="td" id="k27" onclick="putNumber('k27')"></td>
+            </tr>
+            <tr class="rowT" id="row4">
+                <td class="td" id="k28" onclick="putNumber('k28')"></td>
+                <td class="td" id="k29" onclick="putNumber('k29')"></td>
+                <td class="td" id="k30" onclick="putNumber('k30')"></td>
+                <td class="td" id="k31" onclick="putNumber('k31')"></td>
+                <td class="td" id="k32" onclick="putNumber('k32')"></td>
+                <td class="td" id="k33" onclick="putNumber('k33')"></td>
+                <td class="td" id="k34" onclick="putNumber('k34')"></td>
+                <td class="td" id="k35" onclick="putNumber('k35')"></td>
+                <td class="td" id="k36" onclick="putNumber('k36')"></td>
+            </tr>
+            <tr class="rowT" id="row5">
+                <td class="td" id="k37" onclick="putNumber('k37')"></td>
+                <td class="td" id="k38" onclick="putNumber('k38')"></td>
+                <td class="td" id="k39" onclick="putNumber('k39')"></td>
+                <td class="td" id="k40" onclick="putNumber('k40')"></td>
+                <td class="td" id="k41" onclick="putNumber('k41')"></td>
+                <td class="td" id="k42" onclick="putNumber('k42')"></td>
+                <td class="td" id="k43" onclick="putNumber('k43')"></td>
+                <td class="td" id="k44" onclick="putNumber('k44')"></td>
+                <td class="td" id="k45" onclick="putNumber('k45')"></td>
+            </tr>
+            <tr class="rowT" id="row6">
+                <td class="td" id="k46" onclick="putNumber('k46')"></td>
+                <td class="td" id="k47" onclick="putNumber('k47')"></td>
+                <td class="td" id="k48" onclick="putNumber('k48')"></td>
+                <td class="td" id="k49" onclick="putNumber('k49')"></td>
+                <td class="td" id="k50" onclick="putNumber('k50')"></td>
+                <td class="td" id="k51" onclick="putNumber('k51')"></td>
+                <td class="td" id="k52" onclick="putNumber('k52')"></td>
+                <td class="td" id="k53" onclick="putNumber('k53')"></td>
+                <td class="td" id="k54" onclick="putNumber('k54')"></td>
+            </tr>
+            <tr class="rowT" id="row7">
+                <td class="td" id="k55" onclick="putNumber('k55')"></td>
+                <td class="td" id="k56" onclick="putNumber('k56')"></td>
+                <td class="td" id="k57" onclick="putNumber('k57')"></td>
+                <td class="td" id="k58" onclick="putNumber('k58')"></td>
+                <td class="td" id="k59" onclick="putNumber('k59')"></td>
+                <td class="td" id="k60" onclick="putNumber('k60')"></td>
+                <td class="td" id="k61" onclick="putNumber('k61')"></td>
+                <td class="td" id="k62" onclick="putNumber('k62')"></td>
+                <td class="td" id="k63" onclick="putNumber('k63')"></td>
+            </tr>
+            <tr class="rowT" id="row8">
+                <td class="td" id="k64" onclick="putNumber('k64')"></td>
+                <td class="td" id="k65" onclick="putNumber('k65')"></td>
+                <td class="td" id="k66" onclick="putNumber('k66')"></td>
+                <td class="td" id="k67" onclick="putNumber('k67')"></td>
+                <td class="td" id="k68" onclick="putNumber('k68')"></td>
+                <td class="td" id="k69" onclick="putNumber('k69')"></td>
+                <td class="td" id="k70" onclick="putNumber('k70')"></td>
+                <td class="td" id="k71" onclick="putNumber('k71')"></td>
+                <td class="td" id="k72" onclick="putNumber('k72')"></td>
+            </tr>
+            <tr class="rowT" id="row9">
+                <td class="td" id="k73" onclick="putNumber('k73')"></td>
+                <td class="td" id="k74" onclick="putNumber('k74')"></td>
+                <td class="td" id="k75" onclick="putNumber('k75')"></td>
+                <td class="td" id="k76" onclick="putNumber('k76')"></td>
+                <td class="td" id="k77" onclick="putNumber('k77')"></td>
+                <td class="td" id="k78" onclick="putNumber('k78')"></td>
+                <td class="td" id="k79" onclick="putNumber('k79')"></td>
+                <td class="td" id="k80" onclick="putNumber('k80')"></td>
+                <td class="td" id="k81" onclick="putNumber('k81')"></td>
+            </tr>
+        </table>
+        <div id="numberChoose">
+            <button class="numbers" id="n1" onclick="tempNum(1)">1</button>
+            <button class="numbers" id="n2" onclick="tempNum(2)">2</button>
+            <button class="numbers" id="n3" onclick="tempNum(3)">3</button>
+            <button class="numbers" id="n4" onclick="tempNum(4)">4</button>
+            <button class="numbers" id="n5" onclick="tempNum(5)">5</button>
+            <button class="numbers" id="n6" onclick="tempNum(6)">6</button>
+            <button class="numbers" id="n7" onclick="tempNum(7)">7</button>
+            <button class="numbers" id="n8" onclick="tempNum(8)">8</button>
+            <button class="numbers" id="n9" onclick="tempNum(9)">9</button>
+
+        </div>
+        <div id="divButtT">
+            <button class="buttonT" onclick="checkSudoko()">Finish</button>
+            <button class="buttonT" onclick="again()">Again</button>
+        </div>
+    </div>
+    <script src="new.js"></script>
+</body>
+</html>

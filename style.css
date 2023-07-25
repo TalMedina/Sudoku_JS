@@ -1,0 +1,147 @@
+body {
+    display: flex;
+    justify-content: center;
+    background-image: url(sudoku.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#k3,
+#k12,
+#k21,
+#k30,
+#k39,
+#k48,
+#k57,
+#k66,
+#k75,
+#k6,
+#k15,
+#k24,
+#k33,
+#k42,
+#k51,
+#k60,
+#k69,
+#k78 {
+    border-right: 5px solid;
+}
+
+#row6,
+#row3 {
+    border-bottom: 5px solid;
+}
+
+#div1 {
+    margin-top: 100px;
+    height: 500px;
+    width: 600px;
+    top: 200px;
+    border-radius: 50px;
+
+}
+
+.inpt {
+    position: relative;
+    width: 200px;
+    height: 50px;
+    top: 60px;
+    left: 205px;
+}
+
+#firstH {
+    left: 130px;
+    position: relative;
+    top: 40px;
+}
+
+#firstB {
+    position: relative;
+    top: 150px;
+    height: 30px;
+    width: 180px;
+}
+
+#div2 {
+    padding: 20px;
+    top: 200px;
+    position: relative;
+    /* border: solid;
+    border-radius: 10px; */
+    display: none;
+}
+
+#divF {
+    display: flex;
+    justify-content: center;
+    height: 100px;
+}
+
+.buttons {
+    margin-left: 170px;
+    width: 100px;
+    height: 40px;
+    background-color: burlywood;
+    right: 80px;
+    position: relative;
+}
+
+.welc {
+    text-align: center;
+    margin-bottom: 40px;
+    font-family: fantasy;
+    font-size: 50px;
+}
+
+#Table {
+    border: solid;
+    border-radius: 20px;
+    width: 500px;
+    height: 300px;
+    background-color: white;
+    border: 100px;
+    color: black;
+    position: relative;
+    border-collapse: collapse;
+    top: 40px;
+}
+
+td {
+    text-align: center;
+    border: solid;
+    width: 50px;
+    height: 50px;
+    font-size: larger;
+}
+
+#H3 {
+    left: 170px;
+    position: relative;
+}
+
+#div3 {
+    position: relative;
+    display: none;
+}
+
+.buttonT {
+    width: 100px;
+    height: 50px;
+    position: relative;
+    margin-top: 70px;
+}
+
+#divButtT {
+    display: flex;
+    justify-content: space-between;
+}
+
+.numbers {
+    font-size: 30px;
+    width: 50px;
+    border: solid 3px;
+    text-align: center;
+    margin: 1px;
+    height: 40px;
+    margin-top: 45px;
+}
